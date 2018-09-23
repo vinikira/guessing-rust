@@ -1,0 +1,7 @@
+[package]
+name = "guessing-rust"
+version = "0.1.0"
+authors = ["Vinícius Simões <vinicius.simoes95@gmail.com>"]
+
+[dependencies]
+rand = "0.3.14"
