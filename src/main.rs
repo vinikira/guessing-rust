@@ -1,8 +1,8 @@
 extern crate rand;
 
-use std::io;
-use std::cmp::Ordering;
 use rand::Rng;
+use std::cmp::Ordering;
+use std::io;
 
 fn main() {
     println!("Adivinhe o número:");
@@ -14,9 +14,9 @@ fn main() {
 
         let mut palpite = String::new();
 
-        io::stdin().read_line(&mut palpite).expect(
-            "Falha ao ler o palpite",
-        );
+        io::stdin()
+            .read_line(&mut palpite)
+            .expect("Falha ao ler o palpite");
 
         let palpite: u32 = match palpite.trim().parse() {
             Ok(num) => num,
